@@ -31,7 +31,7 @@ M3hl@n! introduces its own **canonical DAG + content-addressed storage + predict
 
 ```bash
 # Paste this entire block into any terminal — it deploys M3hl@n! right where you are
-curl -sSL https://raw.githubusercontent.com/DevinRoyal/m3hlan/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/new-booty/m3hlan/main/install.sh | bash
 # or copy the inline installer from the previous messages if you prefer zero external deps
 After installation you have:
 Bash./build.sh init          # bootstrap environment
