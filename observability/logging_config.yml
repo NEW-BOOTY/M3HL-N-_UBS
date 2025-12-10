@@ -1,0 +1,14 @@
+# Copyright © 2025 Devin B. Royal. All Rights Reserved.
+# Project: M3hl@n! Unified Build System (Original IP).
+# SPDX-License-Identifier: LicenseRef-M3hlan-Enterprise
+level: INFO
+format: json
+destinations:
+  - file: /var/log/m3hlan/build.log
+  - stream: stderr
+telemetry:
+  enabled: true
+  endpoint: http://telemetry.m3hlan.internal
+
+
+# Copyright © 2025 Devin B. Royal. All Rights Reserved.

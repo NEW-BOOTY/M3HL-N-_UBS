@@ -1,0 +1,6 @@
+{
+  "_copyright": "© 2025 Devin B. Royal",
+  "title": "M3hl@n! Polyglot Manifest",
+  "languages": ["java", "python", "rust", "go", "swift", "dotnet"],
+  "interop": "gRPC"
+}

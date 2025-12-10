@@ -1,0 +1,11 @@
+# Copyright © 2025 Devin B. Royal. All Rights Reserved.
+# Project: M3hl@n! Unified Build System (Original IP).
+# SPDX-License-Identifier: LicenseRef-M3hlan-Enterprise
+enabled: true
+learning_mode: active
+thresholds:
+  confidence: 0.85
+  auto_retry: true
+
+
+# Copyright © 2025 Devin B. Royal. All Rights Reserved.

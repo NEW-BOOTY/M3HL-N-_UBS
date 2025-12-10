@@ -1,0 +1,58 @@
+# Copyright © 2025 Devin B. Royal. All Rights Reserved.
+# Project: M3hl@n! Unified Build System (Original IP).
+# SPDX-License-Identifier: LicenseRef-M3hlan-Enterprise
+
+#!/bin/bash
+set -o errexit
+set -o nounset
+set -o pipefail
+IFS=$'\n\t'
+M3HLAN_ROOT="${M3HLAN_ROOT:-/Users/cr/M3hl@n_Unified_System}"
+CORE="${M3HLAN_ROOT}/core/build.sh"
+SCRIPTS="${M3HLAN_ROOT}/scripts"
+
+cmd="${1:-help}"
+shift || true
+
+case "${cmd}" in
+  init|resolve|build|test|release)
+    exec "${CORE}" "${cmd}" "$@"
+    ;;
+  adapters)
+    exec "${SCRIPTS}/m3hlan-adapters-smoke.sh" "$@"
+    ;;
+  sbom)
+    exec "${SCRIPTS}/m3hlan-sbom.sh" "$@"
+    ;;
+  audit)
+    exec "${SCRIPTS}/m3hlan-audit.sh" "$@"
+    ;;
+  heal)
+    exec "${SCRIPTS}/m3hlan-heal.sh" "$@"
+    ;;
+  doctor)
+    exec "${SCRIPTS}/m3hlan-doctor.sh" "$@"
+    ;;
+  help|*)
+    cat <<EOF
+M3hl@n! Unified Build System — CLI
+
+Usage:
+  m3hlan init            Initialize hermetic sandbox
+  m3hlan resolve         Resolve manifests & toolchains
+  m3hlan build [ref]     Execute predictive polyglot build
+  m3hlan test            Run unified test surface
+  m3hlan release         Sign & attest release artifacts
+
+Meta-operations:
+  m3hlan adapters        Run adapter smoke-tests
+  m3hlan sbom            Generate lightweight SBOM view
+  m3hlan audit           Emit provenance / integrity report
+  m3hlan heal            Self-heal core layout & files
+  m3hlan doctor          Toolchain & environment diagnostics
+EOF
+    ;;
+esac
+
+
+# Copyright © 2025 Devin B. Royal. All Rights Reserved.

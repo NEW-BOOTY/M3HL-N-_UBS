@@ -1,0 +1,11 @@
+# Copyright © 2025 Devin B. Royal. All Rights Reserved.
+# Project: M3hl@n! Unified Build System (Original IP).
+# SPDX-License-Identifier: LicenseRef-M3hlan-Enterprise
+branding:
+  success_message: "GOT UM."
+  failure_message: "TRY AGAIN."
+  banner_style: "elite"
+  colors: true
+
+
+# Copyright © 2025 Devin B. Royal. All Rights Reserved.

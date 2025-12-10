@@ -1,0 +1,16 @@
+{
+  "targets": [
+    {
+      "id": "rust-core",
+      "path": "/Volumes/Devin_Royal/some_rust_project",
+      "language": "rust",
+      "adapter": "cargo"
+    },
+    {
+      "id": "java-api",
+      "path": "/Volumes/Devin_Royal/some_maven_project",
+      "language": "java",
+      "adapter": "maven"
+    }
+  ]
+}

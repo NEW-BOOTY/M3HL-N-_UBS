@@ -1,0 +1,9 @@
+{
+  "_copyright": "© 2025 Devin B. Royal",
+  "network": "deny-all",
+  "filesystem": {
+    "read": ["/workspace", "/toolchains"],
+    "write": ["/workspace/out"]
+  },
+  "syscalls": ["deny-ptrace", "deny-mount"]
+}

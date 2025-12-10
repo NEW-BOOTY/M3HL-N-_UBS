@@ -1,0 +1,15 @@
+# Copyright © 2025 Devin B. Royal. All Rights Reserved.
+# Project: M3hl@n! Unified Build System (Original IP).
+# SPDX-License-Identifier: LicenseRef-M3hlan-Enterprise
+name: M3hl@n! CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: ./core/build.sh resolve
+      - run: ./core/build.sh build
+
+
+# Copyright © 2025 Devin B. Royal. All Rights Reserved.
